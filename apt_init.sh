@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install -y htop fish
+sudo apt install -y htop fish mosh
 echo "Change Default Shell..."
 
 echo /usr/bin/fish | sudo tee -a /etc/shells
