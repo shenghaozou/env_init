@@ -24,6 +24,9 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo apt install -y apt-utils
 
+sudo apt-get installi -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+sudo adduser $USER libvirtd
+
 echo "Installing Rmate"
 sudo curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
 sudo chmod +x /usr/local/bin/rmate
