@@ -7,6 +7,8 @@ read -p "Press enter to continue"
 cd
 git clone git@github.com:shenghaozou/gvisor.git
 git clone git@github.com:shenghaozou/zar.git
+git clone git@github.com:shenghaozou/image.git
+sudo cp daemon.json.normal /etc/docker/daemon.json
 
 
 

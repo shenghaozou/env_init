@@ -20,6 +20,9 @@ sudo add-apt-repository \
    stable"
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo apt install -y apt-utils
 
 echo "Installing Rmate"
 sudo curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate
@@ -29,6 +32,7 @@ echo "Setting Tmux Config"
 cd
 git clone https://github.com/gpakosz/.tmux.git
 ln -s -f .tmux/.tmux.conf
+echo "set -g mouse on" >> .tmux/.tmux.conf
 cp .tmux/.tmux.conf.local .
 
 sudo chsh -s /usr/bin/fish $USER
