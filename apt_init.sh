@@ -1,5 +1,9 @@
 sudo apt update
-sudo apt install -y htop fish mosh
+sudo apt install -y htop fish mosh vim
+echo "Update Vim Config..."
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_basic_vimrc.sh
+
 echo "Change Default Shell..."
 
 echo /usr/bin/fish | sudo tee -a /etc/shells
@@ -24,8 +28,8 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo apt install -y apt-utils
 
-sudo apt-get installi -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
-sudo adduser $USER libvirtd
+# sudo apt-get install -y qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
+# sudo adduser $USER libvirtd
 
 echo "Installing Rmate"
 sudo curl -o /usr/local/bin/rmate https://raw.githubusercontent.com/aurora/rmate/master/rmate

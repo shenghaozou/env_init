@@ -1,0 +1,13 @@
+{
+    "runtimes": {
+        "runsc": {
+            "path": "/usr/local/bin/runsc",
+            "runtimeArgs": [
+                ""--debug-log=/tmp/runsc/",
+                "--debug",
+                "--platform=kvm",
+				        "--img-path=/mnt/ramdisk/test.img"
+            ]
+       }
+    }
+}
