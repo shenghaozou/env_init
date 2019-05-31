@@ -11,6 +11,5 @@ echo "Start docker"
 sudo systemctl start docker
 echo "Done. Copy img to ramdisk"
 cp ~/zar/test.img /mnt/ramdisk
-echo "Done. Build Image."
-docker build -t test_image ~/image
+echo "Done. Build Image: docker build -t test_image ~/image"
 

@@ -1,5 +1,5 @@
 sudo apt update
-sudo apt install -y htop fish mosh vim libffi-dev
+sudo apt install -y htop fish mosh vim libffi-dev libseccomp-dev
 echo "Update Vim Config..."
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_basic_vimrc.sh

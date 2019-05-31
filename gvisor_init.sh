@@ -5,6 +5,10 @@ echo "Please paste the following ssh pub key to github. LINK: https://github.com
 cat ~/.ssh/id_rsa.pub
 read -p "Press enter to continue"
 sudo cp daemon.json.debug /etc/docker/daemon.json
+mkdir ~/go
+cd ~/go
+/usr/local/go/bin/go get github.com/seccomp/libseccomp-golang
+
 cd
 git clone git@github.com:shenghaozou/gvisor.git
 git clone git@github.com:shenghaozou/zar.git
