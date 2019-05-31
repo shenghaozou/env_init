@@ -9,3 +9,4 @@ cd
 git clone git@github.com:shenghaozou/gvisor.git
 git clone git@github.com:shenghaozou/zar.git
 git clone git@github.com:shenghaozou/image.git
+git clone git@github.com:shenghaozou/strace-from-scratch.git

@@ -1,1 +1,1 @@
-mount -t ext4 /dev/sdb1 /mnt/sdb1
+mount -t ext4 /dev/sdb1 /img

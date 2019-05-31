@@ -6,6 +6,7 @@ echo "Stop docker"
 sudo systemctl stop docker
 echo "Untar docker data"
 sudo tar -xzf ~/backup.tar.gz -C /mnt/ramdisk/
+sudo ln -s /mnt/ramdisk/docker /var/lib/
 echo "Start docker"
 sudo systemctl start docker
 echo "Done. Copy img to ramdisk"
