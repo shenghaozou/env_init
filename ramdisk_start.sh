@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo mkdir /mnt/ramdisk
 echo "Mount Ramdisk"
-sudo mount -t tmpfs -o rw,size=20G tmpfs /mnt/ramdisk
+sudo mount -t tmpfs -o rw,size=40G tmpfs /mnt/ramdisk
 echo "Stop docker"
 sudo systemctl stop docker
 echo "Untar docker data"
